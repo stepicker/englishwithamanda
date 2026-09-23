@@ -1,3 +1,8 @@
+/* Leave room above the Courses anchor for the sticky header. */
+#featured-courses {
+  scroll-margin-top: 100px;
+}
+
 /*------------------------------
 Grid Area
 -------------------------------*/

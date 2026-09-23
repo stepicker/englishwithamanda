@@ -12870,6 +12870,11 @@ Dark Mode
 }
 
 /* English with Amanda featured course cards */
+/* Leave room above the Courses anchor for the sticky header. */
+#featured-courses {
+  scroll-margin-top: 100px;
+}
+
 .ewa-featured-course-slider {
   width: 100%;
 }
