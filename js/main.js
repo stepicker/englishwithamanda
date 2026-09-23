@@ -101,14 +101,30 @@
         });
 
 
-        $(window).on('scroll', function() {
-            var scroll = $(window).scrollTop();
-            if (scroll < 245) {
-                $(".header__sticky").removeClass("sticky");
+        // Reserve the header's space so fixing it cannot shorten the page
+        // and push the scroll position back across the sticky threshold.
+        var stickyHeaders = document.querySelectorAll('.header__sticky');
+        stickyHeaders.forEach(function(header) {
+            var wrapper = header.parentElement;
+            function reserveHeaderSpace() {
+                wrapper.style.height = header.getBoundingClientRect().height + 'px';
+            }
+            reserveHeaderSpace();
+            if ('ResizeObserver' in window) {
+                new ResizeObserver(reserveHeaderSpace).observe(header);
             } else {
-                $(".header__sticky").addClass("sticky");
+                $(window).on('resize load', reserveHeaderSpace);
             }
         });
+
+        function updateStickyHeaders() {
+            var isSticky = $(window).scrollTop() >= 245;
+            stickyHeaders.forEach(function(header) {
+                header.classList.toggle('sticky', isSticky);
+            });
+        }
+        $(window).on('scroll', updateStickyHeaders);
+        updateStickyHeaders();
 
 
         // Grid Countdown
@@ -508,31 +524,7 @@ var swiper = new Swiper(".ai__slider", {
     slidesPerView: 1,
   });
 
-// Dark to light mode js
-const lightToDarkButton = document.getElementById("light--to-dark-button");
-lightToDarkButton?.addEventListener("click", function () {
-    if (localStorage.getItem("theme-color")) {
-      if (localStorage.getItem("theme-color") === "light") {
-        document.documentElement.classList.add("is_dark");
-        localStorage.setItem("theme-color", "dark");
-        lightToDarkButton?.classList.add("dark--mode");
-      } else {
-        document.documentElement.classList.remove("is_dark");
-        localStorage.setItem("theme-color", "light");
-        lightToDarkButton?.classList?.remove("dark--mode");
-      }
-    } else {
-      if (document.documentElement.classList.contains("is_dark")) {
-        document.documentElement.classList.remove("is_dark");
-        lightToDarkButton?.classList?.remove("dark--mode");
-        localStorage.setItem("theme-color", "light");
-      } else {
-        document.documentElement.classList.add("is_dark");
-        localStorage.setItem("theme-color", "dark");
-        lightToDarkButton?.classList.add("dark--mode");
-      }
-    }
-});
+
 
 
 
