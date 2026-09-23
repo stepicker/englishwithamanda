@@ -441,8 +441,8 @@ var swiper = new Swiper(".hero__course", {
 var swiper = new Swiper(".featured__course", {
     grabCursor: true,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".ewa-featured-course-next",
+        prevEl: ".ewa-featured-course-prev",
     },
     slidesPerView: 1,
     breakpoints: {

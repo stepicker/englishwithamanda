@@ -1,0 +1,31 @@
+# Course image generation
+
+Created with the built-in image generation tool.
+
+## course-trial-lesson.png
+
+Use case: photorealistic-natural. Asset type: English course website card and course detail photograph. Create one landscape 3:2 photograph. Subject: An inviting desk ready for a first English lesson: open blank notebook, pencil, closed introductory English workbook, headphones beside a laptop with a neutral blank screen, small plant. Style: premium natural editorial photography, realistic materials, soft warm daylight, restrained colors, credible real-world objects, crisp main subject and gently softer background. Composition: balanced with all important objects in central 75% so it crops well for cards. Constraints: absolutely no people, faces, hands, body parts, portraits or human images even on screens or printed pages. No cartoons, illustrations, 3D render look, logos, watermarks, large text or title overlays.
+
+## course-general-english.png
+
+Use case: photorealistic-natural. Asset type: English course website card and course detail photograph. Create one landscape 3:2 photograph. Subject: Everyday English study materials on a sunlit wooden desk: open English language textbook with subtle out-of-focus print, notebook, pencil, small globe and a ceramic cup. Style: premium natural editorial photography, realistic materials, soft warm daylight, restrained colors, credible real-world objects, crisp main subject and gently softer background. Composition: balanced with all important objects in central 75% so it crops well for cards. Constraints: absolutely no people, faces, hands, body parts, portraits or human images even on screens or printed pages. No cartoons, illustrations, 3D render look, logos, watermarks, large text or title overlays. Additional strict constraint: textbook pages contain only text and simple abstract grammar tables, absolutely no photographs or illustrations on pages. No framed pictures in background.
+
+## course-group-conversation.png
+
+Use case: photorealistic-natural. Asset type: English course website card and course detail photograph. Create one landscape 3:2 photograph. Subject: An inviting empty language-school discussion space: four empty chairs around a round wooden table, four notebooks and pencils and ceramic cups ready for a small English conversation class. Style: premium natural editorial photography, realistic materials, soft warm daylight, restrained colors, credible real-world objects, crisp main subject and gently softer background. Composition: balanced with all important objects in central 75% so it crops well for cards. Constraints: absolutely no people, faces, hands, body parts, portraits or human images even on screens or printed pages. No cartoons, illustrations, 3D render look, logos, watermarks, large text or title overlays.
+
+## course-cambridge-exams.png
+
+Use case: photorealistic-natural. Asset type: English course website card and course detail photograph. Create one landscape 3:2 photograph. Subject: A focused English exam preparation desk: realistic practice examination papers with answer bubbles and indistinct small print, sharpened pencils, eraser, analog timer and a stack of study books. Style: premium natural editorial photography, realistic materials, soft warm daylight, restrained colors, credible real-world objects, crisp main subject and gently softer background. Composition: balanced with all important objects in central 75% so it crops well for cards. Constraints: absolutely no people, faces, hands, body parts, portraits or human images even on screens or printed pages. No cartoons, illustrations, 3D render look, logos, watermarks, large text or title overlays.
+
+## course-business-english.png
+
+Use case: photorealistic-natural. Asset type: English course website card and course detail photograph. Create one landscape 3:2 photograph. Subject: A refined empty business meeting workspace: laptop with indistinct spreadsheet on screen, printed business charts, elegant notebook and pen on a conference table, glass office windows in soft focus. Style: premium natural editorial photography, realistic materials, soft warm daylight, restrained colors, credible real-world objects, crisp main subject and gently softer background. Composition: balanced with all important objects in central 75% so it crops well for cards. Constraints: absolutely no people, faces, hands, body parts, portraits or human images even on screens or printed pages. No cartoons, illustrations, 3D render look, logos, watermarks, large text or title overlays.
+
+## course-interview-prep.png
+
+Use case: photorealistic-natural. Asset type: English course website card and course detail photograph. Create one landscape 3:2 photograph. Subject: An empty interview preparation setting: two empty chairs facing each other across a tidy desk, a resume document with indistinct print on a clipboard, a pen and closed portfolio, professional quiet office. Style: premium natural editorial photography, realistic materials, soft warm daylight, restrained colors, credible real-world objects, crisp main subject and gently softer background. Composition: balanced with all important objects in central 75% so it crops well for cards. Constraints: absolutely no people, faces, hands, body parts, portraits or human images even on screens or printed pages. No cartoons, illustrations, 3D render look, logos, watermarks, large text or title overlays.
+
+## course-pronunciation.png
+
+Use case: photorealistic-natural. Asset type: English course website card and course detail photograph. Create one landscape 3:2 photograph. Subject: Close-up of a real desktop microphone with pop filter, over-ear headphones and an open pronunciation practice notebook on a wooden desk, laptop displaying a simple audio waveform, cozy home study studio. Style: premium natural editorial photography, realistic materials, soft warm daylight, restrained colors, credible real-world objects, crisp main subject and gently softer background. Composition: balanced with all important objects in central 75% so it crops well for cards. Constraints: absolutely no people, faces, hands, body parts, portraits or human images even on screens or printed pages. No cartoons, illustrations, 3D render look, logos, watermarks, large text or title overlays.
