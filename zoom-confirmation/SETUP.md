@@ -26,9 +26,25 @@ Synthetic preview, not a real reservation:
 No query values are rendered as HTML or control the payment URL. The page uses
 noindex and no-referrer. No personal data is stored by this page's JavaScript.
 
-After deployment, configure Zoom's Trial Lesson Confirmation Page to redirect
-to the full website `/zoom-confirmation/` URL with booking parameters enabled.
-Check that the host resolves `/zoom-confirmation` to the directory while preserving
-the query. No Zoom account settings were changed by this implementation.
-A real booking-to-payment flow still needs verification; no booking or payment
-was submitted during development. Payment uses target=_top to leave an iframe.
+## Embedded booking callback
+
+Keep Zoom's own confirmation page selected; disable its external redirect.
+`booking-scheduler.js` adds the exact embedding page origin to the iframe URL
+and listens for Zoom's `bookingForm` message. It verifies both origin and iframe
+window, accepts the bookingForm object payload (IDs are optional), and
+navigates the Booking page to our fixed same-origin confirmation URL once.
+Only optional start, timeZone and bookerDisplayName strings are forwarded.
+Missing date/time fields retain the email fallback. The callback's fields may
+differ from external-redirect fields; no appointment time is inferred.
+
+Verified locally with simulated events: trusted success, wrong origin/window,
+malformed messages, legacy callbacks without IDs, duplicate callbacks and optional field filtering.
+An actual Zoom booking still needs to confirm this account's callback payload;
+no booking or payment was submitted during development. Callbacks without event/attendee IDs are accepted. Missing or non-object payloads
+are ignored. For debugging, open `booking.html?schedulerDebug=1` and inspect the
+browser console for `[Zoom Scheduler]` entries: readiness, message type and payload
+field names only. No personal values are logged. Test through HTTP(S), not file://.
+
+Sources:
+- https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0083594
+- https://devforum.zoom.us/t/embedded-zoom-scheduler-unable-to-retrieve-booking-details-or-host-user-id-after-booking/140526
