@@ -2830,10 +2830,10 @@ Hero Banner Area
     line-height: 95px;
   }
 }
-@media (min-width: 1500px) and (max-width: 1920px), (min-width: 1366px) and (max-width: 1499px) {
+@media (min-width: 992px) {
   .herobannerarea__online__course.herobannerarea {
-    padding-top: 120px;
-    padding-bottom: 160px;
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
 }
 
