@@ -13114,6 +13114,29 @@ Dark Mode
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
+.pricing-page__buy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 6px;
+  border: 1px solid #d6e5e9;
+  border-radius: 50%;
+  background: #eaf6f8;
+  color: #174e5b;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.pricing-page__buy:hover,
+.pricing-page__buy:focus-visible {
+  background: #174e5b;
+  color: #fff;
+}
+.pricing-page__buy:focus-visible {
+  outline: 2px solid #174e5b;
+  outline-offset: 3px;
+}
 .pricing-page__expiry {
   display: block;
   margin-top: 4px;
