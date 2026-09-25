@@ -13233,4 +13233,55 @@ Dark Mode
   margin-top: 24px;
 }
 
+/* Personal heading styles for the homepage and About introduction. */
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/caveat.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+.herobannerarea__online__course .herobannerarea__title .herobannerarea__title__heading__2.herobannerarea__title__heading__3 .home-hero-heading {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.herobannerarea__title .herobannerarea__title__heading__2 h2 .home-hero-line {
+  color: inherit;
+}
+.herobanner__video > img {
+  height: auto;
+}
+.cambridge-course-page h1.about-greeting {
+  font-family: "Caveat", "Segoe Print", "Bradley Hand", cursive;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+@media (min-width: 992px) {
+  .herobannerarea__online__course .herobannerarea__title .herobannerarea__title__heading__2.herobannerarea__title__heading__3 .home-hero-heading {
+    font-size: 56px;
+  }
+  .home-hero-line {
+    display: block;
+    white-space: nowrap;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .herobannerarea__online__course .herobannerarea__title .herobannerarea__title__heading__2.herobannerarea__title__heading__3 .home-hero-heading {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .herobannerarea__online__course .herobannerarea__title .herobannerarea__title__heading__2.herobannerarea__title__heading__3 .home-hero-heading {
+    font-size: 36px;
+  }
+  .cambridge-course-page h1.about-greeting {
+    font-size: 44px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
