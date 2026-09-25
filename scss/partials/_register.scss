@@ -309,3 +309,12 @@ Register Area
         border-width: 1px;
     }
 }
+/* Extra space between the home contact form and footer. */
+#contact.registerarea {
+  margin-bottom: 230px;
+}
+@media (max-width: 991px) {
+  #contact.registerarea {
+    margin-bottom: 80px;
+  }
+}

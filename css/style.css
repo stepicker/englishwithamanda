@@ -13248,6 +13248,10 @@ Dark Mode
   font-weight: 700;
   letter-spacing: -1px;
 }
+.herobannerarea__text.home-hero-description p {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 .herobannerarea__title .herobannerarea__title__heading__2 h2 .home-hero-line {
   color: inherit;
 }
@@ -13281,6 +13285,17 @@ Dark Mode
   }
   .cambridge-course-page h1.about-greeting {
     font-size: 44px;
+  }
+}
+
+
+/* Extra space between the home contact form and footer. */
+#contact.registerarea {
+  margin-bottom: 230px;
+}
+@media (max-width: 991px) {
+  #contact.registerarea {
+    margin-bottom: 80px;
   }
 }
 
