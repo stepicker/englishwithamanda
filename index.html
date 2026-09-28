@@ -607,6 +607,7 @@
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6">
                             <div class="ewa-header-social" aria-label="Social links">
+                                <a href="https://www.facebook.com/people/English-with-Amanda/61590769316565" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in a new tab)"><i class="icofont-facebook" aria-hidden="true"></i></a>
                                 <a href="https://www.instagram.com/englishwithamandasmith/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)"><i class="icofont-instagram" aria-hidden="true"></i></a>
                                 <a href="https://api.whatsapp.com/send?phone=18563923306" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (opens in a new tab)"><i class="icofont-brand-whatsapp" aria-hidden="true"></i></a>
                             </div>
@@ -631,6 +632,7 @@
                             <div class="header-right-wrap">
     
                                 <div class="ewa-header-social" aria-label="Social links">
+                                <a href="https://www.facebook.com/people/English-with-Amanda/61590769316565" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in a new tab)"><i class="icofont-facebook" aria-hidden="true"></i></a>
                                 <a href="https://www.instagram.com/englishwithamandasmith/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)"><i class="icofont-instagram" aria-hidden="true"></i></a>
                                 <a href="https://api.whatsapp.com/send?phone=18563923306" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (opens in a new tab)"><i class="icofont-brand-whatsapp" aria-hidden="true"></i></a>
                             </div>
@@ -707,7 +709,7 @@
                             <div class="herobannerarea__text herobannerarea__text__2 home-hero-description">
                                 <p>Whether you want to improve your speaking skills, feel more confident at work, reduce your accent, prepare for an exam or interview, or simply become more comfortable using English in everyday life, I am here to help you achieve your goals!</p>
                             </div>
-                            <a class="default__button" href="booking.html">Book your Trial Lesson now</a>
+                            <a class="default__button" href="booking.html" style="font-weight: 600;">Book your Trial Lesson now</a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 herobannerarea__image-column" data-aos="fade-up">
@@ -2211,15 +2213,16 @@
                             <div class="registerarea__form__heading">
                                 <h4>Contact Me</h4>
                             </div>
-                            <form name="English with Amanda - Contact Form" method="POST" data-netlify="true" action="/confirmation/" class="faq-form">
+                            <form id="home-contact-form" name="English with Amanda - Contact Form" method="POST" data-netlify="true" action="/confirmation/" class="faq-form">
                                 <input
                                     type="hidden"
                                     name="form-name"
                                     value="English with Amanda - Contact Form"
                                 />
-                                <input class="register__input" type="text" name="name" placeholder="Your Name">
-                                <input class="register__input" type="text" name="email" placeholder="Email Address">
-                                <textarea class="register__input textarea" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                <input class="register__input" type="text" name="name" placeholder="Your Name" required>
+                                <input class="register__input" type="email" name="email" placeholder="Email Address" required>
+                                <textarea class="register__input textarea" name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                                <p id="home-contact-error" role="alert" style="color: #c62828;" hidden>Please check your input and try again</p>
                                 <div class="registerarea__button">
                                     <button type="submit" class="default__button">Send</button>
                                 </div>
@@ -2679,6 +2682,7 @@
                         <div class="col-xl-3 col-lg-3">
                             <div class="footerarea__icon footerarea__icon__2">
                                 <ul>
+                                    <li><a href="https://www.facebook.com/people/English-with-Amanda/61590769316565" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="icofont-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="https://www.instagram.com/englishwithamandasmith/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="icofont-instagram"></i></a></li>
                                     <li><a href="https://api.whatsapp.com/send?phone=18563923306" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="icofont-brand-whatsapp"></i></a></li>
                                 </ul>
@@ -2709,6 +2713,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.meanmenu.min.js"></script>
     <script src="js/ajax-form.js"></script>
+    <script src="home-contact-form.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
