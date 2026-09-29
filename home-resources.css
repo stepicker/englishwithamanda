@@ -1,0 +1,64 @@
+/* Home page reviews and downloadable lesson materials. */
+#testimonials { padding-top: 60px; padding-bottom: 60px; }
+/* The tallest review sets the track height at each screen width. */
+#testimonials .slick-track { display: flex; align-items: stretch; }
+#testimonials .slick-track::before, #testimonials .slick-track::after { display: none; }
+#testimonials .slick-slide { height: auto; }
+@media (max-width: 767px) {
+  #testimonials { padding-top: 35px; padding-bottom: 35px; }
+}
+#testimonials .testimonial__slider__active__3 { padding-bottom: 80px; }
+#testimonials .testimonial__slider__active__3 .slick-arrow { bottom: 0; border: 0; line-height: 1; }
+#testimonials .testimonialarea__person__3 { margin-top: 24px; }
+#testimonials .testimonial__name h6 { font-size: 20px; }
+.student-flags { position: relative; aspect-ratio: 560 / 520; max-width: 560px; margin-left: 45px; }
+.student-flag { position: absolute; display: block; overflow: hidden; border-radius: 50%; background: #fff; box-shadow: 0 5px 0 #e9e9ed; aspect-ratio: 1; }
+.student-flag img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.student-flag--italy { width: 25%; left: 54%; top: 66%; }
+.student-flag--spain { width: 20%; left: 0; top: 33%; }
+.student-flag--turkey { width: 18%; left: 61%; top: 0; }
+.student-flag--brazil { width: 14%; left: 83%; top: 42%; }
+.student-flag--japan { width: 13%; left: 23%; top: 3%; }
+.student-flag--germany { width: 12%; left: 46%; top: 40%; }
+.student-flag--mexico { width: 10%; left: 22%; top: 78%; }
+.materials-slider { margin: 0 -15px; }
+.material-slide { padding: 18px 15px; }
+#materials .single__blog__wraper { margin-bottom: 0; overflow: hidden; background: #fff; border-radius: 8px; box-shadow: 0 4px 14px rgba(95, 45, 237, 0.10); }
+.material-preview { display: block; padding: 24px; background: #f1f0f5; }
+#materials .material-preview img { width: 100%; height: 250px; object-fit: contain; filter: drop-shadow(0 5px 8px #0002); }
+#materials .single__blog__content { padding: 26px; }
+#materials .single__blog__content h4 { margin-bottom: 12px; }
+#materials .single__blog__content h4 a { font-size: 24px; line-height: 1.4; }
+.materials-controls { display: flex; justify-content: flex-end; gap: 1px; margin-top: 12px; }
+.materials-controls button { width: 60px; height: 60px; border: 0; background: var(--lightGrey10); color: var(--blackColor); font-size: 30px; transition: var(--transition); }
+.materials-controls button:hover { background: var(--primaryColor); color: var(--whiteColor); }
+#testimonials button:focus-visible, #materials button:focus-visible, #materials a:focus-visible { outline: 3px solid var(--primaryColor); outline-offset: 3px; }
+@media (max-width: 991px) { .student-flags { margin: 45px auto 0; width: 100%; } }
+@media (max-width: 575px) { .student-flags { max-width: 350px; } }
+
+/* Consistent square arrow controls for all home page carousels. */
+.ewa-featured-course-controls { gap: 1px; }
+.slider__controls__wrap.ewa-featured-course-controls .arrow-btn { transform: none; }
+.slider__controls__wrap.ewa-featured-course-controls .arrow-btn,
+.materials-controls button,
+#testimonials .testimonial__slider__active__3 .slick-arrow {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 60px; height: 60px; padding: 0; margin: 0;
+  border: 0; border-radius: 0; background: var(--whiteColor);
+  color: var(--blackColor); line-height: 1; font-size: 30px;
+}
+.slider__controls__wrap.ewa-featured-course-controls .arrow-btn::after { display: none; }
+.slider__controls__wrap.ewa-featured-course-controls .arrow-btn:hover,
+.materials-controls button:hover,
+#testimonials .testimonial__slider__active__3 .slick-arrow:hover {
+  background: var(--primaryColor); color: var(--whiteColor);
+}
+.slider__controls__wrap.ewa-featured-course-controls .arrow-btn:focus-visible { outline: 3px solid var(--primaryColor); outline-offset: 3px; }
+
+/* Equal-height download cards, with links aligned below variable-length titles. */
+.materials-slider .slick-track { display: flex; align-items: stretch; }
+.materials-slider .slick-track::before, .materials-slider .slick-track::after { display: none; }
+.materials-slider .material-slide { height: auto; display: flex; }
+#materials .single__blog__wraper { display: flex; flex-direction: column; width: 100%; }
+#materials .single__blog__content { display: flex; flex-direction: column; flex: 1; }
+#materials .single__blog__bottom__button { margin-top: auto; }

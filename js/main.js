@@ -216,13 +216,27 @@
             ]
 
         });
+        $('.materials-slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            appendArrows: $('.materials-controls'),
+            prevArrow: '<button type="button" class="prev_class" aria-label="Previous materials"><i class="icofont-long-arrow-left" aria-hidden="true"></i></button>',
+            nextArrow: '<button type="button" class="next_class" aria-label="Next materials"><i class="icofont-long-arrow-right" aria-hidden="true"></i></button>',
+            responsive: [
+                { breakpoint: 992, settings: { slidesToShow: 2 } },
+                { breakpoint: 576, settings: { slidesToShow: 1 } }
+            ]
+        });
         $('.testimonial__slider__active__3').slick({
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: false,
-            prevArrow: '<span class="prev_class"><i class="icofont-long-arrow-left "></i></span>',
-            nextArrow: '<span class="next_class"><i class="icofont-long-arrow-right active"></i></span>',
+            adaptiveHeight: false,
+            prevArrow: '<button type="button" class="prev_class" aria-label="Previous review"><i class="icofont-long-arrow-left" aria-hidden="true"></i></button>',
+            nextArrow: '<button type="button" class="next_class" aria-label="Next review"><i class="icofont-long-arrow-right" aria-hidden="true"></i></button>',
             responsive: [{
                     breakpoint: 1367,
                     settings: {
